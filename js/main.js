@@ -1,10 +1,10 @@
 
-  let wondowObj = window;
+
   if ('serviceWorker' in navigator) {//Check if browser supports service worker
     navigator.serviceWorker.register('js/sw/index.js')
     .then(function(reg) {
       console.log('Registration worked!'+reg) ;
-  
+      reg.windowObj = window;
       if(!navigator.serviceWorker.controller){
         return;
       }
