@@ -2,6 +2,7 @@ const CacheName = "GWGinNutShell-V1";
 
 self.addEventListener('install', function(event) {
     console.log("within install");
+	console.log(document);
     event.waitUntil(function(){
      /*
      TODO after installing
