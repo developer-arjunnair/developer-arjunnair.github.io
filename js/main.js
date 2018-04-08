@@ -15,13 +15,13 @@
       let sw;
       if (registration.installing) {
         sw = registration.installing;
-        $('#installing').addClass('highlight');
+        document.querySelector('#installing').classList.add('highlight');                    
     } else if (registration.waiting) {
-        sw = registration.waiting;        
-        $('#waiting').addClass('highlight');
+        sw = registration.waiting;  
+        document.querySelector('#waiting').classList.add('highlight');                    
     } else if (registration.active) {
         sw = registration.active;
-        $('#active').addClass('highlight');
+        document.querySelector('#active').classList.add('highlight');
     }
     if(sw){
       sw.addEventListener('statechange',function(e){

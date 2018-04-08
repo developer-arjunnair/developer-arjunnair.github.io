@@ -1,4 +1,4 @@
-const CacheName = "GWGinNutShell-V1";
+const CacheName = "GWGinNutShell-V2";
 
 self.addEventListener('install', function(event) {
     console.log("within install");
