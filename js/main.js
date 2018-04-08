@@ -4,9 +4,9 @@
     navigator.serviceWorker.register('js/sw/index.js')
     .then(function(reg) {
       console.log('Registration worked!',reg) ;
-      if(!navigator.serviceWorker.controller){
-        return;
-      }
+      // if(!navigator.serviceWorker.controller){
+      //   return;
+      // }
       navigator.serviceWorker.addEventListener("controllerchange",function(){
         location.reload();
       });
