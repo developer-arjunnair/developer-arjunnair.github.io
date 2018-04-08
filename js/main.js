@@ -2,8 +2,8 @@
 
   if ('serviceWorker' in navigator) {//Check if browser supports service worker
     navigator.serviceWorker.register('js/sw/index.js')
-    .then(function(reg) {
-      console.log('Registration worked!',reg) ;
+    .then(function(registration) {
+      console.log('registrationistration worked!',registration) ;
       // if(!navigator.serviceWorker.controller){
       //   return;
       // }
@@ -11,7 +11,7 @@
         location.reload();
       });
   
-      let oInstalling = reg.installing;
+      let oInstalling = registration.installing;
       let sw;
       if (registration.installing) {
         sw = registration.installing;
