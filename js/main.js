@@ -21,7 +21,7 @@
         document.querySelector('#kind').textContent = 'waiting';
     } else if (registration.active) {
         sw = registration.active;
-        document.querySelector('#kind').textContent = 'active';
+        document.querySelector('#active').textContent = 'active';
     }
     if(sw){
       sw.addEventListener('statechange',function(e){
