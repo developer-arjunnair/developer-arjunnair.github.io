@@ -17,11 +17,11 @@
         sw = registration.installing;
         $('#installing').addClass('highlight');
     } else if (registration.waiting) {
-        sw = registration.waiting;
-        document.querySelector('#kind').textContent = 'waiting';
+        sw = registration.waiting;        
+        $('#waiting').addClass('highlight');
     } else if (registration.active) {
         sw = registration.active;
-        document.querySelector('#active').textContent = 'active';
+        $('#active').addClass('highlight');
     }
     if(sw){
       sw.addEventListener('statechange',function(e){
