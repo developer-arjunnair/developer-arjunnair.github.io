@@ -1,21 +1,23 @@
 
 @import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text');
-
+$banner-backgroud-color: #00000036;
+$banner-header-color: #01170f;
+$banner-header-font: 'Libre Barcode 39 Text', cursive;
 .banner {
     width: 100vw;
     height: 15vh;
     box-sizing: border-box;
-    background-color:#00000036;
-    margin: 0px 0px 0px 0px;
+    background-color: $banner-backgroud-color;
+    margin: 0px;
     display: flex;
 }
 
 .banner header {
-  color: #01170f;
+  color: $banner-header-color;
   display: flex;
   justify-content: center;
   width: 100%;
   flex-direction: column;
-  font-family: 'Libre Barcode 39 Text', cursive;
+  font-family: $banner-header-font;
   font-size: 4em;
 }
