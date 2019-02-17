@@ -12,7 +12,6 @@
 
 .banner header {
   color: #01170f;
-  display: -webkit-flex;
   display: flex;
   justify-content: center;
   width: 100%;
