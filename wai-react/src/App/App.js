@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import './App.css';
-import Banner from '../Banner/Banner'
+import './app.scss';
+import Banner from '../Banner/Banner';
+import LeftBanner from '../LeftBanner/LeftBanner';
 
 class App extends Component {
   render() {
@@ -9,6 +10,9 @@ class App extends Component {
       <div className="app_banner">
         <Banner />
       </div>
+      <section calssName = "mail_leftBanner">
+        <LeftBanner />
+      </section>
       </div>
     );
   }
