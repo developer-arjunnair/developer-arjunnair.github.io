@@ -10,7 +10,7 @@ class App extends Component {
       <div className="app_banner">
         <Banner />
       </div>
-      <section calssName = "mail_leftBanner">
+      <section className = "mail_leftBanner">
         <LeftBanner />
       </section>
       </div>

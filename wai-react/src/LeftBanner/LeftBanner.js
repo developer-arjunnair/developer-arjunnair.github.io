@@ -11,11 +11,17 @@ export default class LeftBanner extends Component {
 
 
 get technologiesWorked() {
-  return ['React'];
+  return [
+    new Technologies('React', 4),
+    new Technologies('MobX', 1),
+    new Technologies('Java', 3),
+    new Technologies('Spring Boot', 1),
+    new Technologies('Jenkins', 1.8),
+  ];
 }
 
 componentDidMount() {
-  this.technologiesWorked.forEach( t => {this.animate(`${t}-sideTech`)})
+  this.technologiesWorked.forEach( t => {this.animate(t.id)})
 }
   animate(id) {
     const ball = document.getElementById(id);
@@ -56,11 +62,10 @@ listen(document, 'mouseup touchend').start(stopTracking);
     return (
       <div className='leftBanner'>
           {
-            this.technologiesWorked.map((tech) => {
-              const id = `${tech}-sideTech`;
+            this.technologiesWorked.map((t) => {
                 return (
-                  <div id={id}>
-                    {tech}
+                  <div id={t.id} style={ { 'font-size': t.size + 'em'}}>
+                    {t.tech}
                   </div>
                 );
             }
@@ -68,5 +73,17 @@ listen(document, 'mouseup touchend').start(stopTracking);
           }
       </div>
     );
+  }
+}
+
+class Technologies {
+
+  constructor(t, size) {
+    this.tech = t;
+    this.size = size;
+  }
+
+  get id() {
+    return `${this.tech.replace(/ /g,"-")}-tech`;
   }
 }
