@@ -4,9 +4,9 @@
   "private": true,
   "dependencies": {
     "node-sass": "^4.11.0",
-    "popmotion": "^8.6.2",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
+    "react-pose": "^4.0.7",
     "react-scripts": "2.1.5"
   },
   "devDependencies": {},
