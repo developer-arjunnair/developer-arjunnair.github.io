@@ -1,4 +1,4 @@
-{
+export default {
    "experience":[
        {
            "from": "May 14, 2018",

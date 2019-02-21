@@ -1,11 +1,17 @@
 
 .leftBanner {
-  border-style: solid;
+  box-shadow: inset -7px 10px 16px 3px;
   position: absolute;
   padding: 10px;
   margin: 20px;
   height: 78%;
   width: 20%;
-  top: 67px;
+  top: 121px;
   z-index: 20;
+}
+
+.leftBanner ul {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
 }
