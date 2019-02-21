@@ -1,18 +1,16 @@
 import React, { Component } from 'react';
 import './app.scss';
+import deviceCheck from '../utils/deviceCheck'
 import Banner from '../Banner/Banner';
 import LeftBanner from '../LeftBanner/LeftBanner';
 import Details from "../Details/Details";
-// import posed from 'react-pose';
-
-// const MainContainer = posed.div({
-//   enter: { opacity: 1, delay: 300, beforeChildren: true },
-//   exit: { opacity: 0 }
-// });
+import MobileDeviceSupportError from '../ErrorPages/MobileDeviceSupportError'
 class App extends Component {
 
   render() {
     return (
+      deviceCheck.any() ? <MobileDeviceSupportError /> :
+      (
       <div className="App">
       <div className="app_banner">
         <Banner />
@@ -23,7 +21,7 @@ class App extends Component {
       <main className="mainContent"s>
         <Details />
       </main>
-      </div>
+      </div> )
     );
   }
 }

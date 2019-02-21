@@ -22,7 +22,7 @@ const TechDiv = posed.li({
 export default ({ size, tech, id }) => {
 
   return (
-    <TechDiv className='techLi' style={{ fontSize: size + 'em'}} >
+    <TechDiv className='techLi' style={{ fontSize: size + 'px'}} >
       {tech}
     </TechDiv>
   );

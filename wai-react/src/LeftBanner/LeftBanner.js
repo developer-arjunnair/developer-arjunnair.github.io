@@ -11,17 +11,24 @@ constructor(props) {
   setTimeout(() => {this.setState({ showTransition: true })});
 }
 get technologiesWorked() {
+  const experience = {
+    HIGH: 31,
+    BELOW_HIGH: 28,
+    MID: 25,
+    BELOW_MID: 22,
+    LOW: 15,
+  }
   return [
-    new Technologies('React', 4),
-    new Technologies('MobX', 2),
-    new Technologies('Node', 1.8),
-    new Technologies('Yarn', 1),
-    new Technologies('Webpack', 1),
-    new Technologies('Jenkins', 1),
-    new Technologies('Java', 3),
-    new Technologies('Spring Boot', 2),
-    new Technologies('Jenkins', 1),
-    new Technologies('Docker', 1),
+    new Technologies('React', experience.HIGH),
+    new Technologies('MobX', experience.BELOW_HIGH),
+    new Technologies('Node', experience.BELOW_HIGH),
+    new Technologies('Yarn', experience.MID),
+    new Technologies('Webpack', experience.LOW),
+    new Technologies('Jenkins', experience.BELOW_MID),
+    new Technologies('Java', experience.BELOW_HIGH),
+    new Technologies('Spring Boot', experience.BELOW_HIGH),
+    new Technologies('Jenkins', experience.BELOW_MID),
+    new Technologies('Docker', experience.BELOW_MID),
   ];
 }
 
