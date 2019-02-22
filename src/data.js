@@ -15,9 +15,6 @@ export default {
                 "Polyflills(Babel) are used support all the browsers while leveraging the ES6 features",
                 "CSS is compiled from less",
                 "CSS is coded ensuring interface is available on all browsers",
-                "Interfaces are developed with accessibility enabled, opening gates to larger crowd",
-                "Current project support Desktop, tablet and phone, flex boxes and other CSS techniques were used to support the responsive patterns",
-                "Use flow and eslint for ensure best practices are followed",
                 "Yarn is used and the build manager and serving the live application for development",
                 "Serviceworkers are used to enhance the offline capabilities of the app",
                 "Created a service in spring boot connecting to 3rd party end points",
@@ -29,9 +26,6 @@ export default {
                 "Participate in analyzing and judging the efforts in sprint planning",
                 "Supporting production deployment on rotation basis",
                 "Be prompt on the feedback channel and be able to judge and fix P1 and P0 prod issues",
-                "Maintain feature flags ensuring lesser development effort and high application availability",
-                "Testing the applications against the requirements before each deployment to ensure stability and avoid regression",
-                "Understand the infra and check for the possibilities for improvements"
            ]
        }
 

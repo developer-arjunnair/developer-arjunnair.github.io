@@ -27,7 +27,6 @@ get technologiesWorked() {
     new Technologies('Jenkins', experience.BELOW_MID),
     new Technologies('Java', experience.BELOW_HIGH),
     new Technologies('Spring Boot', experience.BELOW_HIGH),
-    new Technologies('Jenkins', experience.BELOW_MID),
     new Technologies('Docker', experience.BELOW_MID),
   ];
 }

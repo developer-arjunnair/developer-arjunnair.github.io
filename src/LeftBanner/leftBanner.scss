@@ -1,23 +1,32 @@
 
 .leftBanner {
-  box-shadow: inset -7px 10px 16px 3px;
+  box-shadow: 9px 13px 20px 0px;
   position: absolute;
   padding: 10px;
   margin: 20px;
-  height: 78%;
+  height: 65%;
   width: 20%;
-  top: 121px;
+  top: 174px;
   z-index: 20;
+  border-radius: 1pc;
 }
 
 .leftBanner ul {
   margin: 0;
   box-sizing: border-box;
   padding: 0;
+  li {
+    margin-bottom: 15px;
+  }
 }
 
 @import url('https://fonts.googleapis.com/css?family=Inknut+Antiqua');
 .techStackHeader {
   font-family: 'Inknut Antiqua', serif;
   font-size: 2em;
+  opacity: 1;
+  transform: none;
+  box-shadow: 3px 5px 12px;
+  border-radius: 20px;
+  margin-bottom: 4px;
 }

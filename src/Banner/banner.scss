@@ -3,21 +3,37 @@
 $banner-backgroud-color: #00000036;
 $banner-header-color: #01170f;
 $banner-header-font: 'Libre Barcode 39 Text', cursive;
-.banner {
+header {
     width: 100vw;
-    height: 15vh;
+    height: 18vh;
     box-sizing: border-box;
     background-color: $banner-backgroud-color;
     margin: 0px;
     display: flex;
+    flex-direction: column;
 }
 
-.banner header {
+header .heading{
   color: $banner-header-color;
   display: flex;
   justify-content: center;
   width: 100%;
   flex-direction: column;
   font-family: $banner-header-font;
-  font-size: 4em;
+  height: 75%;
+  h1 {
+    font-weight: 100;
+    font-size: 4em;
+  }
+}
+
+header .icons {
+  height: 25%;
+  display: flex;
+  justify-content: space-around;
+  div {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+  }
 }
