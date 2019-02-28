@@ -20,14 +20,14 @@ get technologiesWorked() {
   }
   return [
     new Technologies('React', experience.HIGH),
-    new Technologies('MobX', experience.BELOW_HIGH),
-    new Technologies('Node', experience.BELOW_HIGH),
-    new Technologies('Yarn', experience.MID),
-    new Technologies('Webpack', experience.LOW),
-    new Technologies('Jenkins', experience.BELOW_MID),
-    new Technologies('Java', experience.BELOW_HIGH),
-    new Technologies('Spring Boot', experience.BELOW_HIGH),
-    new Technologies('Docker', experience.BELOW_MID),
+    new Technologies('MobX', experience.HIGH),
+    new Technologies('Node', experience.HIGH),
+    new Technologies('Yarn', experience.HIGH),
+    new Technologies('Webpack', experience.HIGH),
+    new Technologies('Jenkins', experience.HIGH),
+    new Technologies('Java', experience.HIGH),
+    new Technologies('Spring Boot', experience.HIGH),
+    new Technologies('Docker', experience.HIGH),
   ];
 }
 
@@ -52,18 +52,20 @@ get TechStackHeader() {
   render() {
     const { TechStackHeader, state: { showTransition } } = this;
     return (
-      <div className='leftBanner'>
-        <PoseGroup>
-          { showTransition && <TechStackHeader className="techStackHeader" key="TechStackHeader">
-              Tech Stack
-            </TechStackHeader>}
-        </PoseGroup>
-        <ul>
-            {
-              this.technologiesWorked.map((t) => <Tech key={t.id} {...t}/> )
-            }
-        </ul>
-        </div>
+        <React.Fragment>
+          <PoseGroup>
+            { showTransition && <TechStackHeader className="techStackHeader" key="TechStackHeader">
+                Tech Stack
+              </TechStackHeader>}
+          </PoseGroup>
+          <div className='leftBanner'>
+          <ul>
+              {
+                this.technologiesWorked.map((t) => <Tech key={t.id} {...t}/> )
+              }
+          </ul>
+          </div>
+        </React.Fragment>
     );
   }
 }

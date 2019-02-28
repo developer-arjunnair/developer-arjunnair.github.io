@@ -1,32 +1,36 @@
 
-.leftBanner {
-  box-shadow: 9px 13px 20px 0px;
-  position: absolute;
+$left-banner-font-Srisakdi : 'Srisakdi', cursive;
+$left-banner-font-Karla : 'Karla', sans-serif;
+%base-leftBanner {
   padding: 10px;
-  margin: 20px;
-  height: 65%;
-  width: 20%;
-  top: 174px;
-  z-index: 20;
+  width: 100%;
   border-radius: 1pc;
+}
+.leftBanner {
+  @extend %base-leftBanner;
 }
 
 .leftBanner ul {
   margin: 0;
   box-sizing: border-box;
   padding: 0;
+  text-align: left;
   li {
     margin-bottom: 15px;
+    font-family: $left-banner-font-Karla;
   }
 }
 
-@import url('https://fonts.googleapis.com/css?family=Inknut+Antiqua');
+
 .techStackHeader {
-  font-family: 'Inknut Antiqua', serif;
+  @extend %base-leftBanner;
   font-size: 2em;
   opacity: 1;
   transform: none;
-  box-shadow: 3px 5px 12px;
   border-radius: 20px;
   margin-bottom: 4px;
+  padding: 10px;
+  width: 100%;
+  font-family: $left-banner-font-Srisakdi;
+  box-shadow: -6px -2px 8px;
 }

@@ -29,7 +29,7 @@ export default class Details extends Component {
   render() {
     const { Container, LI, UL, state: {isVisible}} = this;
     return (
-       <PoseGroup>
+       <PoseGroup className='details'>
        { isVisible && <Container key='cont'>
           <h3 > {data.experience[0].client} </h3>
             <UL key='ul' className='responsibilites'>

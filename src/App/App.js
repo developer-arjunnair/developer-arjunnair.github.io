@@ -12,15 +12,17 @@ class App extends Component {
       deviceCheck.any() ? <MobileDeviceSupportError /> :
       (
       <div className="App">
-      <div className="app_banner">
-        <Banner />
-      </div>
-      <section className = "mail_leftBanner">
-        <LeftBanner />
-      </section>
-      <main className="mainContent"s>
-        <Details />
-      </main>
+        <div className="app_banner">
+          <Banner />
+        </div>
+        <div className="mainContent">
+          <section>
+            <LeftBanner />
+          </section>
+          <main>
+            <Details />
+          </main>
+        </div>
       </div> )
     );
   }
