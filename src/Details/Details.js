@@ -13,8 +13,8 @@ export default class Details extends Component {
   }
   get LI() {
     return posed.li({
-      enter: { x: 0, opacity: 1,  transition: { duration: 2000 } },
-      exit: { x: 500, opacity: 0 }
+      enter: { opacity: 1, transition: { duration: 200 }},
+      exit: { opacity: 0 }
     });
   }
   get Container() {
@@ -30,7 +30,8 @@ export default class Details extends Component {
     const { Container, LI, UL, state: {isVisible}} = this;
     return (
        <PoseGroup className='details'>
-       { isVisible && <Container key='cont'>
+       { isVisible &&
+       <Container key='cont'>
           <h3 > {data.experience[0].client} </h3>
             <UL key='ul' className='responsibilites'>
               {data.experience[0].responsibilities.map ( (l, i) =>

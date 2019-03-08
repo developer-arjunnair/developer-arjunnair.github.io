@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
 import './leftBanner.scss';
 import Tech from './Tech/Tech'
-import posed, { PoseGroup } from 'react-pose';
+import posed, { Transition } from 'react-pose';
 
 export default class LeftBanner extends Component {
 
-constructor(props) {
-  super(props);
-  this.state = { showTransition : false};
-  setTimeout(() => {this.setState({ showTransition: true })});
-}
 get technologiesWorked() {
   const experience = {
     HIGH: 31,
@@ -34,36 +29,38 @@ get technologiesWorked() {
 get TechStackHeader() {
   return posed.div({
     enter: {
-      y: 0,
       opacity: 1,
       delay: 300,
-      transition: {
-        y: { type: 'spring', stiffness: 1000, damping: 10 },
-        default: { duration: 3000 }
-      }
     },
     exit: {
-      y: -100,
       opacity: 0,
-      transition: { duration: 150 }
+      transition: { duration: 200 }
     }
   });
 }
+get UL() {
+  return posed.ul({
+    enter: { staggerChildren: 100}
+  });
+}
+
   render() {
-    const { TechStackHeader, state: { showTransition } } = this;
+    const { TechStackHeader, UL } = this;
     return (
         <React.Fragment>
-          <PoseGroup>
-            { showTransition && <TechStackHeader className="techStackHeader" key="TechStackHeader">
+          <Transition animateOnMount>
+            {<TechStackHeader className="techStackHeader" key="TechStackHeader">
                 Tech Stack
               </TechStackHeader>}
-          </PoseGroup>
+          </Transition>
           <div className='leftBanner'>
-          <ul>
-              {
-                this.technologiesWorked.map((t) => <Tech key={t.id} {...t}/> )
-              }
-          </ul>
+          <Transition animateOnMount>
+            <UL key="leftBannerUL">
+                {
+                  this.technologiesWorked.map((t) => <Tech key={`${t.id}-ul`} {...t}/> )
+                }
+            </UL>
+          </Transition>
           </div>
         </React.Fragment>
     );

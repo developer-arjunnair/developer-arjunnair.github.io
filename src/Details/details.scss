@@ -3,14 +3,19 @@
   list-style: none;
   font-family: 'Abel', sans-serif;
   text-align: left;
-  padding-left:8%;
+  transform: rotateX(-2deg) rotateY(-9deg);
 }
 
 .responsibilites li {
   padding-bottom: 3px;
   font-size: 1.2em;
+  text-shadow: 9px 9px 4px #0606064f;
 }
 
 .details h3 {
   font-size: x-large;
+}
+
+.details {
+  perspective: 620px;
 }
