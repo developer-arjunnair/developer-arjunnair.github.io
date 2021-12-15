@@ -1,20 +1,22 @@
 {
-  "main.css": "/static/css/main.25a7ff8e.chunk.css",
-  "main.js": "/static/js/main.0ba39a09.chunk.js",
-  "main.js.map": "/static/js/main.0ba39a09.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.42ac5946.js",
-  "runtime~main.js.map": "/static/js/runtime~main.42ac5946.js.map",
-  "static/css/2.b8c9c85f.chunk.css": "/static/css/2.b8c9c85f.chunk.css",
-  "static/js/2.204c4fbc.chunk.js": "/static/js/2.204c4fbc.chunk.js",
-  "static/js/2.204c4fbc.chunk.js.map": "/static/js/2.204c4fbc.chunk.js.map",
-  "index.html": "/index.html",
-  "precache-manifest.13dcd37ae01651e9ec22ca853360039b.js": "/precache-manifest.13dcd37ae01651e9ec22ca853360039b.js",
-  "service-worker.js": "/service-worker.js",
-  "static/css/2.b8c9c85f.chunk.css.map": "/static/css/2.b8c9c85f.chunk.css.map",
-  "static/css/main.25a7ff8e.chunk.css.map": "/static/css/main.25a7ff8e.chunk.css.map",
-  "static/media/Expedia round.png": "/static/media/Expedia round.4fecab77.png",
-  "static/media/Expedia.png": "/static/media/Expedia.6c77dc0f.png",
-  "static/media/ProPic.jpg": "/static/media/ProPic.70e46156.jpg",
-  "static/media/WiproRoundLogo.png": "/static/media/WiproRoundLogo.9e3bcd35.png",
-  "static/media/wayfair-logo.png": "/static/media/wayfair-logo.7ec46c45.png"
+  "files": {
+    "main.css": "/static/css/main.8a403b6e.chunk.css",
+    "main.js": "/static/js/main.fafd01b7.chunk.js",
+    "main.js.map": "/static/js/main.fafd01b7.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ce95af36.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ce95af36.js.map",
+    "static/js/2.9aab5d53.chunk.js": "/static/js/2.9aab5d53.chunk.js",
+    "static/js/2.9aab5d53.chunk.js.map": "/static/js/2.9aab5d53.chunk.js.map",
+    "static/js/3.a4553a45.chunk.js": "/static/js/3.a4553a45.chunk.js",
+    "static/js/3.a4553a45.chunk.js.map": "/static/js/3.a4553a45.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.8a403b6e.chunk.css.map": "/static/css/main.8a403b6e.chunk.css.map",
+    "static/js/2.9aab5d53.chunk.js.LICENSE.txt": "/static/js/2.9aab5d53.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ce95af36.js",
+    "static/js/2.9aab5d53.chunk.js",
+    "static/css/main.8a403b6e.chunk.css",
+    "static/js/main.fafd01b7.chunk.js"
+  ]
 }
